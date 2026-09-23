@@ -1,0 +1,78 @@
+ IPCThreadState: Binder transaction failure. id: 153578, BR_*: 29201, error: -28 (No space left on device)
+ BpBinder: Large outgoing transaction of 894496 bytes, interface descriptor , code 6 was sent
+ JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 894496)
+ ActivityManager: pid 4283 com.dogfydiet.app.uat sent binder code 6 with flags 1 to frozen apps and got error -2147483646
+ AndroidRuntime: Shutting down VM
+ AndroidRuntime: FATAL EXCEPTION: main
+ AndroidRuntime: Process: com.dogfydiet.app.uat, PID: 4283
+ AndroidRuntime: java.lang.RuntimeException: android.os.TransactionTooLargeException: data parcel size 894496 bytes
+ AndroidRuntime: Bundle stats:
+ AndroidRuntime:   androidx.lifecycle.BundlableSavedStateRegistry.key [size=893080]
+ AndroidRuntime:     androidx.lifecycle.internal.SavedStateHandlesProvider [size=868560]
+ AndroidRuntime:       EmbeddedPaymentElementViewModel(instance = bc4ff617-ea2b-4d13-a815-d597f6576294) [size=195060]
+ AndroidRuntime:         INITIAL_CONFIRMATION_ARGUMENTS_KEY [size=33764]
+ AndroidRuntime:         ConfigurationCache [size=29288]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_PAYMENT_METHOD_METADATA_KEY [size=26500]
+ AndroidRuntime:         AwaitingConfirmationResult [size=7504]
+ AndroidRuntime:         STATE_KEY_EMBEDDED_CONTENT [size=26740]
+ AndroidRuntime:         LinkParameters [size=41204]
+ AndroidRuntime:         CONFIRMATION_STATE_KEY [size=27728]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_CONFIGURATION_KEY [size=1116]
+ AndroidRuntime:       EmbeddedPaymentElementViewModel(instance = 5fba3d4e-651f-4958-888d-c7bfc0f48ab3) [size=112040]
+ AndroidRuntime:         ConfigurationCache [size=29280]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_PAYMENT_METHOD_METADATA_KEY [size=26492]
+ AndroidRuntime:         STATE_KEY_EMBEDDED_CONTENT [size=26732]
+ AndroidRuntime:         CONFIRMATION_STATE_KEY [size=27552]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_CONFIGURATION_KEY [size=1116]
+ AndroidRuntime:       EmbeddedPaymentElementViewModel(instance = 32499f06-b165-4ac2-80c2-61dd8c809709) [size=112040]
+ AndroidRuntime:         ConfigurationCache [size=29280]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_PAYMENT_METHOD_METADATA_KEY [size=26492]
+ AndroidRuntime:         STATE_KEY_EMBEDDED_CONTENT [size=26732]
+ AndroidRuntime:         CONFIRMATION_STATE_KEY [size=27552]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_CONFIGURATION_KEY [size=1116]
+ AndroidRuntime:       EmbeddedPaymentElementViewModel(instance = ea2f13a3-f3f9-4f19-bc5c-0537f0323a45) [size=112040]
+ AndroidRuntime:         ConfigurationCache [size=29280]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_PAYMENT_METHOD_METADATA_KEY [size=26492]
+ AndroidRuntime:         STATE_KEY_EMBEDDED_CONTENT [size=26732]
+ AndroidRuntime:         CONFIRMATION_STATE_KEY [size=27552]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_CONFIGURATION_KEY [size=1116]
+ AndroidRuntime:       EmbeddedPaymentElementViewModel(instance = 8ce07daf-ef3b-4ab2-8cb5-e788c3830063) [size=112072]
+ AndroidRuntime:         ConfigurationCache [size=29288]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_PAYMENT_METHOD_METADATA_KEY [size=26500]
+ AndroidRuntime:         STATE_KEY_EMBEDDED_CONTENT [size=26740]
+ AndroidRuntime:         CONFIRMATION_STATE_KEY [size=27560]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_CONFIGURATION_KEY [size=1116]
+ AndroidRuntime:       EmbeddedPaymentElementViewModel(instance = 4047a3b5-adbf-40b3-800b-e4c67941d4c4) [size=112072]
+ AndroidRuntime:         ConfigurationCache [size=29288]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_PAYMENT_METHOD_METADATA_KEY [size=26500]
+ AndroidRuntime:         STATE_KEY_EMBEDDED_CONTENT [size=26740]
+ AndroidRuntime:         CONFIRMATION_STATE_KEY [size=27560]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_CONFIGURATION_KEY [size=1116]
+ AndroidRuntime:       EmbeddedPaymentElementViewModel(instance = 712258ea-3340-438b-8782-552e538dbd85) [size=112040]
+ AndroidRuntime:         ConfigurationCache [size=29280]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_PAYMENT_METHOD_METADATA_KEY [size=26492]
+ AndroidRuntime:         STATE_KEY_EMBEDDED_CONTENT [size=26732]
+ AndroidRuntime:         CONFIRMATION_STATE_KEY [size=27552]
+ AndroidRuntime:         DefaultEmbeddedSelectionChooser_PREVIOUS_CONFIGURATION_KEY [size=1116]
+ AndroidRuntime:     android:support:activity-result [size=21856]
+ AndroidRuntime:       KEY_COMPONENT_ACTIVITY_REGISTERED_KEYS [size=20652]
+ AndroidRuntime:     android:support:fragments [size=2280]
+ AndroidRuntime:       fragment_fce2f76f-def8-4fb9-8450-d395d320fc2b [size=1856]
+ AndroidRuntime: PersistableBundle stats:
+ AndroidRuntime:   [null]
+ AndroidRuntime: 	at android.app.servertransaction.PendingTransactionActions$StopInfo.run(PendingTransactionActions.java:146)
+ AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:995)
+ AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+ AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:248)
+ AndroidRuntime: 	at android.os.Looper.loop(Looper.java:338)
+ AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9067)
+ AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+ AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
+ AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)
+ AndroidRuntime: Caused by: android.os.TransactionTooLargeException: data parcel size 894496 bytes
+ AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+ AndroidRuntime: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+ AndroidRuntime: 	at android.app.IActivityClientController$Stub$Proxy.activityStopped(IActivityClientController.java:1504)
+ AndroidRuntime: 	at android.app.ActivityClient.activityStopped(ActivityClient.java:100)
+ AndroidRuntime: 	at android.app.servertransaction.PendingTransactionActions$StopInfo.run(PendingTransactionActions.java:135)
+ AndroidRuntime: 	... 8 more
